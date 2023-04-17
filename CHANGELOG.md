@@ -1,3 +1,7 @@
+## 0.0.3
+
+* Updated Example Info
+
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Init Project.
