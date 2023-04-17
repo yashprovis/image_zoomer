@@ -15,6 +15,8 @@ To use this plugin, add `image_zoomer` as a [dependency in your pubspec.yaml fil
 ### Examples
 Here are small examples that show you how to use the Dialog.
 
+![image](https://user-images.githubusercontent.com/106865994/232475931-ba2c3fe6-ded1-4510-919a-671a3941200d.png)
+
 #### Write data
 <?code-excerpt "readme_excerpts.dart (Write)"?>
 ```dart
