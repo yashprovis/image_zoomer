@@ -1,39 +1,29 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Image Zoomer plugin
+<?code-excerpt path-base="excerpts/packages/image_zoomer_example"?>
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+[![pub package](https://img.shields.io/pub/v/image_zoomer.svg)](https://pub.dev/packages/image_zoomer)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+A new Flutter package for a customized Image Zoom in/out Dialog.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+|             | Android | iOS  | Linux | macOS  | Web | Windows     |
+|-------------|---------|------|-------|--------|-----|-------------|
+| **Support** | SDK 16+ | 9.0+ | Any   | 10.11+ | Any | Any         |
 
 ## Usage
+To use this plugin, add `image_zoomer` as a [dependency in your pubspec.yaml file](https://pub.dev/packages/image_zoomer/example).
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+### Examples
+Here are small examples that show you how to use the Dialog.
 
+#### Write data
+<?code-excerpt "readme_excerpts.dart (Write)"?>
 ```dart
-const like = 'sample';
+// Create a dialog to show the Image Zoomer Dialog
+showDialog(
+        context: context,
+        builder: (_) => const ImageZoomer(
+              image:
+                  "https://i.pinimg.com/550x/ae/de/a9/aedea9ea9db181dcbc0ad146c87d8842.jpg",
+              imageType: ImageType.network,
+            ));
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
